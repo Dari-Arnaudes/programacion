@@ -5,6 +5,9 @@ import rutas from './routes.js';
 
 const app = express();
 
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }));
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 

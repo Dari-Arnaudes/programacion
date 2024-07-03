@@ -49,3 +49,95 @@ body {
   .navbar-brand:hover {
     transform: scale(1.1);
   }
+
+/* Estilos generales de la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #8e7bae; /* Color de fondo entre morado y rosado */
+}
+
+/* Estilos de las celdas */
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+/* Estilos de los encabezados */
+th {
+  background-color: #6e5c9e;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Estilos de las filas */
+tr:nth-child(even) {
+  background-color: #f2ebf9;
+}
+
+tr:nth-child(odd) {
+  background-color: #eae3f5;
+}
+
+/* Estilos de los bordes */
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+.form-group {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación de entrada del título */
+.title {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInLeft 0.5s ease forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animación de entrada de la barra de navegación */
+.navbar-custom {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInDown 0.5s ease forwards;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
