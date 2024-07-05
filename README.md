@@ -1,2 +1,0 @@
-# programacion
-proyecto de programación
